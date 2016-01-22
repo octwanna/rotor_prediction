@@ -1,8 +1,7 @@
 #!/usr/bin/python
 
 """
-Blade element theory.
-Inflow velocity ignored.
+Blade element deflection theory.
 Inputs:
 1. rotor radius (m)
 """
@@ -11,7 +10,7 @@ import sys
 import math
 
 
-def perf_bet(radius):
+def perf_bedt(radius):
   # Parameters
   OMEGA = 500
   N = 1000
@@ -30,8 +29,8 @@ def perf_bet(radius):
   dl = [ x*CL*da for x in q ]
   dd = [ x*CD*da for x in q ]
   dp = [ x*y for (x,y) in zip(dd,v) ]
-  thrust = NB*sum(dl)
-  power = NB*sum(dp)
+  thrust = sum(dl)
+  power = sum(dp)
 
   return (power, thrust)
 
