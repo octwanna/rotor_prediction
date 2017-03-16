@@ -18,8 +18,8 @@ The focus is on thrust and power prediction for a stationary rotor
 3. Blade element momentum theory (BEMT)  
 4. Blade element momentum deflection theory (BEMDT) (experimental!)     
 
-The simple MT serves as a sanity check for all other models. 
-MT gives an upper bound for thrust efficiency and lower bound for power. 
-MT relies entirely on physics, while BET and BEMT usually relies in part on 
+The simple MT serves as a sanity check for all other models.
+MT gives an upper bound for thrust efficiency and lower bound for power.
+MT relies entirely on theory, while BET and BEMT usually relies in part on
 empirical data.
 

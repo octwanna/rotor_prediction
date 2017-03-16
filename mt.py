@@ -18,7 +18,7 @@ def power_mt(radius, thrust):
 
 if __name__ == "__main__":
   if len(sys.argv) != 3:
-    print "Correct input arguments: <rotor radius (m)> <rotor thrust (N)>"
+    print "input: <rotor radius (m)> <rotor thrust (N)>"
     sys.exit()
   radius = float(sys.argv[1])
   thrust = float(sys.argv[2])
